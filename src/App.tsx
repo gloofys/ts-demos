@@ -1,26 +1,14 @@
-import UserInfo from "./components/UserInfo.tsx";
-import AdminInfo from "./components/AdminInfo.tsx";
-import {Info, AdminInfoList} from "./Types.ts";
+
+import {useState} from "react";
+import UserProfile from "./components/UserProfile.tsx";
 
 const App = () => {
-    const user : Info= {
-        id:1,
-        name:"John",
-        email:'john@gmail.com',
-    }
-    const admin : AdminInfoList= {
-        id:2,
-        name:"Jane Smith",
-        email:'jane@gmail.com',
-        role:'admin',
-        lastLogin: new Date(),
-    }
-
-
+    const [counter, setCounter] = useState<number>(0);
     return (
         <div>
-            <UserInfo user={user} />
-            <AdminInfo admin={admin} />
+            <h2>{counter}</h2>
+            <button onClick={() => setCounter(counter + 1)}>Counter</button>
+            <UserProfile />
         </div>
     )
 }
