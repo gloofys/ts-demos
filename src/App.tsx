@@ -9,6 +9,9 @@
 // import Counter2 from "./components/Counter2.tsx";
 import Counter3 from "./components/Counter3.tsx";
 import CounterReduce from "./components/CounterReduce.tsx";
+import MyComponent from "./components/MyComponent.tsx";
+import FetchDemo from "./components/FetchDemo.tsx";
+import FetchDemo2 from "./components/FetchDemo2.tsx";
 
 const App = () => {
     // const [counter, setCounter] = useState<number>(0);
@@ -24,8 +27,12 @@ const App = () => {
             {/*<EventHandling/>*/}
             {/*<Counter2/>*/}
             {/*<Counter3/>*/}
-            <CounterReduce />
+            {/*<CounterReduce />*/}
+            {/*<MyComponent/>*/}
+            {/*<FetchDemo venueSlug="home-assignment-venue-helsinki" />*/}
+            <FetchDemo2 />
         </div>
+
     )
 }
 export default App
